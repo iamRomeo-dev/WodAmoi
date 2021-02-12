@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/* https://www.svgbackgrounds.com/#geometric-intersection */
+body, .footer {
+  background-color: #ffff00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff8000'/%3E%3Cstop offset='1' stop-color='%23ff8000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300ff19'/%3E%3Cstop offset='1' stop-color='%2300ff19' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%239900ff'/%3E%3Cstop offset='1' stop-color='%239900ff' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffff00'/%3E%3Cstop offset='1' stop-color='%23ffff00' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FF0000'/%3E%3Cstop offset='1' stop-color='%23FF0000' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230CF'/%3E%3Cstop offset='1' stop-color='%230CF' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+    color: red
+}
+
+.imagesHome {
+    -ms-interpolation-mode: bicubic;
+    image-rendering: optimizeQuality;
+    margin: 10px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    height: 200px; 
+    width: 200px;
+  }
+
+  /* Texte sous les icones de la page d'accueil */
+.linkHome {
+  text-decoration: none
+}
+
+figcaption {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: initial;
+}
+
+.containerHome {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerNavBar {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 9rem; 
+  width: 9rem;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar {
+  cursor: pointer;
+  float: right;
+  margin-right: 5%;
+  transform: translateY(100%);
+}
+
+.addWod {
+  float: left;
+}
+
+.add {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-left: 5%;
+  transform: translateY(100%);
+}
+
+.login {
+  float: right;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-left: 5%;
+  transform: translateY(100%);
+}
+
+.MuiGrid-grid-md-6 {
+  max-width: 33% !important;
+}
+
+.MuiCardContent-root {
+  padding-top: 0px !important;
+}
+
+@media screen and (max-width: 600px) {
+  /* La taille des étiquettes des WODs redimmensionnés de 100% à 50% */
+  .MuiGrid-grid-xs-12 {
+    max-width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerNavBar {
+    height: 100px;
+  }
+  .logo {
+    top: 10%;
+    height: 6rem; 
+    width: 6rem;
+  }
+  /* .containerHome {
+    margin-top: 40px;
+  } */
+  .imagesHome {
+    height: 130px; 
+    width: 130px;
+  }
+  /* Taille des inputs (barre de recherche et formulaires */
+  .MuiOutlinedInput-input {
+    padding: 12.5px 14px !important;
+  }
+  /* Taille de la font des inputs */
+  .MuiFormLabel-root {
+    font-size: 0.65rem !important;
+  }
+  /* La taille de tout les body2 donc du texte */
+  .MuiTypography-body2 {
+    line-height: 1 !important;
+    letter-spacing: 0.011em !important;
+    font-size: 0.6rem !important;
+  }
+  /* Hauteur du bloc des Noms, date, team dans l'image */
+  .makeStyles-overlay {
+    top: 5px !important;
+  }
+  /* Taille du titre des WODs */
+  .MuiTypography-h5 {
+    font-size: 1rem !important;
+  }
+  /* Reduction des marges de la description des WODs et casse les phrases trop longues*/
+  .MuiCardContent-root {
+    padding: 0 !important;
+    padding-left: 10px !important ;
+    padding-right: 10px !important;
+    overflow-wrap: break-word;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.1em !important;
+  }
+  /* Réaligner les bouttons like et delete */
+  .MuiCardActions-root {
+    padding: 0px !important;
+  }
+}
