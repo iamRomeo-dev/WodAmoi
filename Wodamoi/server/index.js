@@ -22,7 +22,7 @@ app.get('/',(req, res)=> {
   res.send('Hello to Wodamoi API')
 })
 
-// const CONNECTION_URL = 'mongodb+srv://Biscotte314:Biscotte1@cluster0.3mvdq.mongodb.net/<wodamoi>?retryWrites=true&w=majority';
+// const CONNECTION_URL = 'mongodb+srv://??????:???????@cluster0.3mvdq.mongodb.net/<???????>?retryWrites=true&w=majority';
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
